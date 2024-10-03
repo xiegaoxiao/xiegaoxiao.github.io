@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-10-03T05:55:27.012Z</updated>
+  <updated>2024-10-03T06:33:14.291Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,22 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>到底行不行</title>
+    <link href="http://example.com/posts/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0.html"/>
+    <id>http://example.com/posts/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0.html</id>
+    <published>2024-10-03T06:27:29.000Z</published>
+    <updated>2024-10-03T06:33:14.291Z</updated>
+    
+    <content type="html"><![CDATA[<p>我行</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我行&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>测试文章1</title>
     <link href="http://example.com/posts/1.html"/>
     <id>http://example.com/posts/1.html</id>
     <published>2024-10-03T05:54:32.000Z</published>
-    <updated>2024-10-03T05:55:27.012Z</updated>
+    <updated>2024-10-03T06:05:35.379Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="这是一篇测试文章"><a href="#这是一篇测试文章" class="headerlink" title="这是一篇测试文章"></a>这是一篇测试文章</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="这是一篇测试文章"><a href="#这是一篇测试文章" class="headerlink" title="这是一篇测试文章"></a>这是一篇测试文章</h1><h2 id="如何发文章-目前不知道方法"><a href="#如何发文章-目前不知道方法" class="headerlink" title="如何发文章,目前不知道方法"></a>如何发文章,目前不知道方法</h2><p>我真是服了你个老6啊</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;这是一篇测试文章&quot;&gt;&lt;a href=&quot;#这是一篇测试文章&quot; class=&quot;headerlink&quot; title=&quot;这是一篇测试文章&quot;&gt;&lt;/a&gt;这是一篇测试文章&lt;/h1&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;这是一篇测试文章&quot;&gt;&lt;a href=&quot;#这是一篇测试文章&quot; class=&quot;headerlink&quot; title=&quot;这是一篇测试文章&quot;&gt;&lt;/a&gt;这是一篇测试文章&lt;/h1&gt;&lt;h2 id=&quot;如何发文章-目前不知道方法&quot;&gt;&lt;a href=&quot;#如何发文章-目前不知道方法&quot; c</summary>
       
     
     
     
+    <category term="测试" scheme="http://example.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="test" scheme="http://example.com/tags/test/"/>
     
   </entry>
   
