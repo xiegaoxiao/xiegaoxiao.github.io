@@ -39,10 +39,10 @@
   
   <entry>
     <title>测试文章1</title>
-    <link href="https://www.imaeternal.cn/posts/1.html"/>
-    <id>https://www.imaeternal.cn/posts/1.html</id>
+    <link href="https://www.imaeternal.cn/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01.html"/>
+    <id>https://www.imaeternal.cn/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01.html</id>
     <published>2024-10-03T05:54:32.000Z</published>
-    <updated>2024-10-03T08:35:39.299Z</updated>
+    <updated>2024-10-03T08:40:26.208Z</updated>
     
     <content type="html"><![CDATA[<h1 id="这是一篇测试文章"><a href="#这是一篇测试文章" class="headerlink" title="这是一篇测试文章"></a>这是一篇测试文章</h1><p>记录了我第一个网页</p>]]></content>
     
