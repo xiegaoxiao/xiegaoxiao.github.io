@@ -6,7 +6,7 @@
   <link href="https://imaeternal.cn/atom.xml" rel="self"/>
   
   <link href="https://imaeternal.cn/"/>
-  <updated>2024-10-04T03:26:53.802Z</updated>
+  <updated>2024-10-04T03:34:41.153Z</updated>
   <id>https://imaeternal.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://imaeternal.cn/posts/problemsolve1.html"/>
     <id>https://imaeternal.cn/posts/problemsolve1.html</id>
     <published>2024-10-04T02:43:51.000Z</published>
-    <updated>2024-10-04T03:26:53.802Z</updated>
+    <updated>2024-10-04T03:34:41.153Z</updated>
     
     <content type="html"><![CDATA[<h2 id="目前本站已经恢复使用"><a href="#目前本站已经恢复使用" class="headerlink" title="目前本站已经恢复使用"></a>目前本站已经恢复使用</h2><span id="more"></span><h3 id="心路历程"><a href="#心路历程" class="headerlink" title="心路历程"></a>心路历程</h3><p>通过vercel搭建的网站国内大概率无法访问,于是我又买了一个域名,通过域名解析来访问通过vercel部署的网站,域名解析也设置好了,但是访问速度仍是不佳,进去之后转圈半天,图片也加载不出来,刚开始试了html+css+js 压缩工具,也不见好转,兜兜转转弄了一下午,问题还是没解决,但是在<strong>DNS解析服务器设置为Vercel自己提供的解析服务器再进行访问图片也能加载,速度也提上来了</strong></p>]]></content>
     
@@ -30,6 +30,8 @@
     
     
     
+    <category term="更新日志" scheme="https://imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    
     
     <category term="问题" scheme="https://imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
     
@@ -37,10 +39,10 @@
   
   <entry>
     <title>本页面访问非常慢</title>
-    <link href="https://imaeternal.cn/posts/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0.html"/>
-    <id>https://imaeternal.cn/posts/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0.html</id>
+    <link href="https://imaeternal.cn/posts/deploymentInit.html"/>
+    <id>https://imaeternal.cn/posts/deploymentInit.html</id>
     <published>2024-10-03T06:27:29.000Z</published>
-    <updated>2024-10-03T10:46:56.588Z</updated>
+    <updated>2024-10-04T03:34:56.728Z</updated>
     
     <content type="html"><![CDATA[<p>目前还在解决中…</p>]]></content>
     
@@ -53,6 +55,10 @@
     
     
     
+    <category term="更新日志" scheme="https://imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="问题" scheme="https://imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
     
   </entry>
   
