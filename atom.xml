@@ -3,11 +3,11 @@
   <title>Eernal.</title>
   
   <subtitle>的奇幻空间</subtitle>
-  <link href="https://imaeternal.cn/atom.xml" rel="self"/>
+  <link href="https://www.imaeternal.cn/atom.xml" rel="self"/>
   
-  <link href="https://imaeternal.cn/"/>
+  <link href="https://www.imaeternal.cn/"/>
   <updated>2024-10-04T09:38:24.030Z</updated>
-  <id>https://imaeternal.cn/</id>
+  <id>https://www.imaeternal.cn/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Java SSM框架学习 第一期</title>
-    <link href="https://imaeternal.cn/posts/JavaSSM01.html"/>
-    <id>https://imaeternal.cn/posts/JavaSSM01.html</id>
+    <link href="https://www.imaeternal.cn/posts/JavaSSM01.html"/>
+    <id>https://www.imaeternal.cn/posts/JavaSSM01.html</id>
     <published>2024-10-04T08:40:44.000Z</published>
     <updated>2024-10-04T09:38:24.030Z</updated>
     
@@ -35,19 +35,19 @@
     
     
     
-    <category term="技术" scheme="https://imaeternal.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.imaeternal.cn/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Java" scheme="https://imaeternal.cn/tags/Java/"/>
+    <category term="Java" scheme="https://www.imaeternal.cn/tags/Java/"/>
     
-    <category term="技术" scheme="https://imaeternal.cn/tags/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.imaeternal.cn/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title>搭建个人博客的坑点</title>
-    <link href="https://imaeternal.cn/posts/problemsolve1.html"/>
-    <id>https://imaeternal.cn/posts/problemsolve1.html</id>
+    <link href="https://www.imaeternal.cn/posts/problemsolve1.html"/>
+    <id>https://www.imaeternal.cn/posts/problemsolve1.html</id>
     <published>2024-10-04T02:43:51.000Z</published>
     <updated>2024-10-04T05:28:03.666Z</updated>
     
@@ -58,17 +58,17 @@
     
     
     
-    <category term="更新日志" scheme="https://imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    <category term="更新日志" scheme="https://www.imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
     
     
-    <category term="问题" scheme="https://imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
+    <category term="问题" scheme="https://www.imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>本页面访问非常慢</title>
-    <link href="https://imaeternal.cn/posts/deploymentInit.html"/>
-    <id>https://imaeternal.cn/posts/deploymentInit.html</id>
+    <link href="https://www.imaeternal.cn/posts/deploymentInit.html"/>
+    <id>https://www.imaeternal.cn/posts/deploymentInit.html</id>
     <published>2024-10-03T06:27:29.000Z</published>
     <updated>2024-10-04T03:34:56.728Z</updated>
     
@@ -83,17 +83,17 @@
     
     
     
-    <category term="更新日志" scheme="https://imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    <category term="更新日志" scheme="https://www.imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
     
     
-    <category term="问题" scheme="https://imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
+    <category term="问题" scheme="https://www.imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>测试文章1</title>
-    <link href="https://imaeternal.cn/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01.html"/>
-    <id>https://imaeternal.cn/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01.html</id>
+    <link href="https://www.imaeternal.cn/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01.html"/>
+    <id>https://www.imaeternal.cn/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01.html</id>
     <published>2024-10-03T05:54:32.000Z</published>
     <updated>2024-10-04T02:37:35.094Z</updated>
     
@@ -108,10 +108,10 @@
     
     
     
-    <category term="测试" scheme="https://imaeternal.cn/categories/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="https://www.imaeternal.cn/categories/%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="test" scheme="https://imaeternal.cn/tags/test/"/>
+    <category term="test" scheme="https://www.imaeternal.cn/tags/test/"/>
     
   </entry>
   
