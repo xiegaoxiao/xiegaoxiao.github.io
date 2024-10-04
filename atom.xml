@@ -6,7 +6,7 @@
   <link href="https://imaeternal.cn/atom.xml" rel="self"/>
   
   <link href="https://imaeternal.cn/"/>
-  <updated>2024-10-04T02:59:54.297Z</updated>
+  <updated>2024-10-04T03:26:53.802Z</updated>
   <id>https://imaeternal.cn/</id>
   
   <author>
@@ -21,18 +21,17 @@
     <link href="https://imaeternal.cn/posts/problemsolve1.html"/>
     <id>https://imaeternal.cn/posts/problemsolve1.html</id>
     <published>2024-10-04T02:43:51.000Z</published>
-    <updated>2024-10-04T02:59:54.297Z</updated>
+    <updated>2024-10-04T03:26:53.802Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="目前本站已经恢复使用"><a href="#目前本站已经恢复使用" class="headerlink" title="目前本站已经恢复使用"></a>目前本站已经恢复使用</h2><h3 id="心路历程"><a href="#心路历程" class="headerlink" title="心路历程"></a>心路历程</h3><p>通过vercel搭建的网站国内大概率无法访问,于是我又买了一个域名,通过域名解析来访问通过vercel部署的网站,域名解析也设置好了,但是访问速度仍是不佳,进去之后转圈半天,图片也加载不出来,刚开始试了html+css+js 压缩工具,也不见好转,兜兜转转弄了一下午,问题还是没解决,但是在<strong>DNS解析服务器设置为Vercel自己提供的解析服务器再进行访问图片也能加载,速度也提上来了</strong></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="目前本站已经恢复使用"><a href="#目前本站已经恢复使用" class="headerlink" title="目前本站已经恢复使用"></a>目前本站已经恢复使用</h2><span id="more"></span><h3 id="心路历程"><a href="#心路历程" class="headerlink" title="心路历程"></a>心路历程</h3><p>通过vercel搭建的网站国内大概率无法访问,于是我又买了一个域名,通过域名解析来访问通过vercel部署的网站,域名解析也设置好了,但是访问速度仍是不佳,进去之后转圈半天,图片也加载不出来,刚开始试了html+css+js 压缩工具,也不见好转,兜兜转转弄了一下午,问题还是没解决,但是在<strong>DNS解析服务器设置为Vercel自己提供的解析服务器再进行访问图片也能加载,速度也提上来了</strong></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;目前本站已经恢复使用&quot;&gt;&lt;a href=&quot;#目前本站已经恢复使用&quot; class=&quot;headerlink&quot; title=&quot;目前本站已经恢复使用&quot;&gt;&lt;/a&gt;目前本站已经恢复使用&lt;/h2&gt;&lt;h3 id=&quot;心路历程&quot;&gt;&lt;a href=&quot;#心路历程&quot; class=&quot;head</summary>
-      
+    <summary type="html">&lt;h2 id=&quot;目前本站已经恢复使用&quot;&gt;&lt;a href=&quot;#目前本站已经恢复使用&quot; class=&quot;headerlink&quot; title=&quot;目前本站已经恢复使用&quot;&gt;&lt;/a&gt;目前本站已经恢复使用&lt;/h2&gt;</summary>
     
     
     
+    
+    <category term="问题" scheme="https://imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
     
   </entry>
   
