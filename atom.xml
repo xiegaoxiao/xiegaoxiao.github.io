@@ -6,7 +6,7 @@
   <link href="https://imaeternal.cn/atom.xml" rel="self"/>
   
   <link href="https://imaeternal.cn/"/>
-  <updated>2024-10-04T05:28:03.666Z</updated>
+  <updated>2024-10-04T09:38:24.030Z</updated>
   <id>https://imaeternal.cn/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java SSM框架学习 第一期</title>
+    <link href="https://imaeternal.cn/posts/JavaSSM01.html"/>
+    <id>https://imaeternal.cn/posts/JavaSSM01.html</id>
+    <published>2024-10-04T08:40:44.000Z</published>
+    <updated>2024-10-04T09:38:24.030Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="初识Spring"><a href="#初识Spring" class="headerlink" title="初识Spring"></a>初识Spring</h2><ul><li>Spring Framework</li><li>Spring Boot</li><li>Spring Cloud</li></ul><h2 id="Spring-Framework-系统架构"><a href="#Spring-Framework-系统架构" class="headerlink" title="Spring Framework 系统架构"></a>Spring Framework 系统架构</h2><ul><li>Core Container : 核心容器</li><li>AOP: 面向切面编程(在不修改源码的基础上,对原功能实现增强)</li><li>Aspects: AOP思想实现</li><li>Data Access: 数据访问</li><li>Data Integration : 数据集成</li><li>Web :web 开发</li><li>Test: 单元测试与集成测试</li></ul><h3 id="Spring-Famework-学习路线"><a href="#Spring-Famework-学习路线" class="headerlink" title="Spring Famework 学习路线"></a>Spring Famework 学习路线</h3><h4 id="第一部分-核心容器"><a href="#第一部分-核心容器" class="headerlink" title="第一部分 : 核心容器"></a>第一部分 : 核心容器</h4><ul><li>核心概论(IoC&#x2F;DI)</li><li>容器基本操作</li></ul><h4 id="第二部分-整合"><a href="#第二部分-整合" class="headerlink" title="第二部分 : 整合"></a>第二部分 : 整合</h4><ul><li>整合数据层技术MyBatis</li></ul><h4 id="第三部分-AOP"><a href="#第三部分-AOP" class="headerlink" title="第三部分: AOP"></a>第三部分: AOP</h4><ul><li>核心概念</li><li>AOP基础操作</li><li>AOP 实用开发</li></ul><h4 id="第四部分-事务"><a href="#第四部分-事务" class="headerlink" title="第四部分: 事务"></a>第四部分: 事务</h4><ul><li>事务实用开发</li></ul><h3 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h3><ul><li><p>代码书写现状</p><ul><li>耦合度偏高</li></ul></li><li><p>解决方案</p><ul><li>使用对象时,在程序中不要主动使用new产生对象,转换为由<strong>外部</strong>提供对象</li></ul></li><li><p><strong>IoC(Inversion of Control)控制反转</strong></p><ul><li>对象的创建控制权由程序转移到<strong>外部</strong>,这种思想被称为控制反转</li></ul></li><li><p>Spring技术对IoC思想进行了实现</p><ul><li>Spring提供了一个容器,称为<strong>IoC容器</strong>,用来充当IoC思想中的”<strong>外部</strong>“</li><li>IoC容器负责对象的创建,初始化等一系列工作,被创建或被管理的对象在IoC容器中统称为<strong>Bean</strong></li></ul></li><li><p><strong>DI (Dependency Injection)依赖注入</strong></p></li><li><p>目标: <strong>充分解耦</strong></p></li><li><p>使用IoC容器管理bean(IoC)</p></li><li><p>在IoC容器内将有依赖关系的bean进行关系绑定 (DI)</p></li><li><p>最终效果</p><ul><li>使用对象时不仅可以直接从IoC容器中获取,并且获取到的bean已经绑定了所有的依赖关系</li></ul></li></ul><h3 id="IoC-入门案例"><a href="#IoC-入门案例" class="headerlink" title="IoC 入门案例"></a>IoC 入门案例</h3><h4 id="Ioc入门案例思路分析"><a href="#Ioc入门案例思路分析" class="headerlink" title="Ioc入门案例思路分析"></a>Ioc入门案例思路分析</h4><ol><li>管理什么?(Service 与Dao)</li><li>如何将被管理对象告知IoC容器?(配置)</li><li>被管理的对象交给IoC容器,如何获取到IoC容器? (接口)</li><li>IoC容器得到后,如何从容器中获取bean?(接口方法)</li><li>使用Spring导入哪些坐标?(pom.xml)</li></ol><h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><ol><li><p>导入Spring坐标</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs java">&lt;dependency&gt;<br>  &lt;groupId&gt;org.springframework&lt;/groupId&gt;<br>  &lt;artifactId&gt;spring-context&lt;/artifactId&gt;<br>  &lt;version&gt;<span class="hljs-number">5.0</span><span class="hljs-number">.5</span>.RELEASE&lt;/version&gt;<br>&lt;/dependency&gt;<br></code></pre></td></tr></table></figure></li><li><p>定义Spring 管理类(接口)</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">UserDao</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">save</span><span class="hljs-params">()</span>;<br>&#125;<br></code></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserDaoImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">UserDao</span> &#123;<br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">save</span><span class="hljs-params">()</span> &#123;<br>        System.out.println(<span class="hljs-string">&quot;我是UserDao的实现类&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li><li><p>创建Spring配置文件</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs java">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span>?&gt;<br>&lt;beans xmlns=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans&quot;</span><br>       xmlns:xsi=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br>       xsi:schemaLocation=<span class="hljs-string">&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&quot;</span>&gt;<br>    &lt;bean id=<span class="hljs-string">&quot;userDao&quot;</span> class=<span class="hljs-string">&quot;com.itheima.dao.impl.UserDaoImpl&quot;</span>/&gt;<br><br>&lt;/beans&gt;<br></code></pre></td></tr></table></figure></li><li><p>初始化IoC容器(Spring 核心容器&#x2F;Spring容器),通过容器获取bean</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TestApp1</span> &#123;<br>    <span class="hljs-meta">@Test</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">test1</span><span class="hljs-params">()</span>&#123;<br>        <span class="hljs-type">ApplicationContext</span> <span class="hljs-variable">app</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ClassPathXmlApplicationContext</span>(<span class="hljs-string">&quot;applicationContext.xml&quot;</span>);<br>        <span class="hljs-type">UserDao</span> <span class="hljs-variable">userDao</span> <span class="hljs-operator">=</span> (UserDao) app.getBean(<span class="hljs-string">&quot;userDao&quot;</span>);<br>        userDao.save();<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;初识Spring&quot;&gt;&lt;a href=&quot;#初识Spring&quot; class=&quot;headerlink&quot; title=&quot;初识Spring&quot;&gt;&lt;/a&gt;初识Spring&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Spring Framework&lt;/li&gt;
+&lt;li&gt;Spring Boot&lt;/l</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="https://imaeternal.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Java" scheme="https://imaeternal.cn/tags/Java/"/>
+    
+    <category term="技术" scheme="https://imaeternal.cn/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建个人博客的坑点</title>
