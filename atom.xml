@@ -6,7 +6,7 @@
   <link href="https://imaeternal.cn/atom.xml" rel="self"/>
   
   <link href="https://imaeternal.cn/"/>
-  <updated>2024-10-05T02:27:34.007Z</updated>
+  <updated>2024-10-05T02:29:23.184Z</updated>
   <id>https://imaeternal.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>搭建个人博客的坑点</title>
+    <title>由于网速不佳已经转移到服务器上了</title>
     <link href="https://imaeternal.cn/posts/problemsolve2.html"/>
     <id>https://imaeternal.cn/posts/problemsolve2.html</id>
     <published>2024-10-05T02:26:51.000Z</published>
-    <updated>2024-10-05T02:27:34.007Z</updated>
+    <updated>2024-10-05T02:29:23.184Z</updated>
     
     <content type="html"><![CDATA[<h2 id="目前本站转移服务器了"><a href="#目前本站转移服务器了" class="headerlink" title="目前本站转移服务器了"></a>目前本站转移服务器了</h2><span id="more"></span><p>不用vercel改用自己的服务器</p>]]></content>
     
