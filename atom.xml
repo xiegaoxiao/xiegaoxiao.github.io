@@ -3,11 +3,11 @@
   <title>Eernal.</title>
   
   <subtitle>的奇幻空间</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://blog.imaeternal.cn/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://blog.imaeternal.cn/"/>
   <updated>2024-10-05T05:09:46.976Z</updated>
-  <id>http://example.com/</id>
+  <id>https://blog.imaeternal.cn/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>目前域名还没有绑定好</title>
-    <link href="http://example.com/posts/mysolution2.html"/>
-    <id>http://example.com/posts/mysolution2.html</id>
+    <link href="https://blog.imaeternal.cn/posts/mysolution2.html"/>
+    <id>https://blog.imaeternal.cn/posts/mysolution2.html</id>
     <published>2024-10-05T05:08:35.000Z</published>
     <updated>2024-10-05T05:09:46.976Z</updated>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>mysolution</title>
-    <link href="http://example.com/posts/mysolution.html"/>
-    <id>http://example.com/posts/mysolution.html</id>
+    <link href="https://blog.imaeternal.cn/posts/mysolution.html"/>
+    <id>https://blog.imaeternal.cn/posts/mysolution.html</id>
     <published>2024-10-05T04:27:05.000Z</published>
     <updated>2024-10-05T04:27:27.969Z</updated>
     
@@ -59,8 +59,8 @@
   
   <entry>
     <title>再次妥协</title>
-    <link href="http://example.com/posts/pst1.html"/>
-    <id>http://example.com/posts/pst1.html</id>
+    <link href="https://blog.imaeternal.cn/posts/pst1.html"/>
+    <id>https://blog.imaeternal.cn/posts/pst1.html</id>
     <published>2024-10-05T02:32:24.000Z</published>
     <updated>2024-10-05T02:50:16.290Z</updated>
     
@@ -74,17 +74,17 @@
     
     
     
-    <category term="更新日志" scheme="http://example.com/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    <category term="更新日志" scheme="https://blog.imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
     
     
-    <category term="问题" scheme="http://example.com/tags/%E9%97%AE%E9%A2%98/"/>
+    <category term="问题" scheme="https://blog.imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>由于网速不佳已经转移到服务器上了</title>
-    <link href="http://example.com/posts/problemsolve2.html"/>
-    <id>http://example.com/posts/problemsolve2.html</id>
+    <link href="https://blog.imaeternal.cn/posts/problemsolve2.html"/>
+    <id>https://blog.imaeternal.cn/posts/problemsolve2.html</id>
     <published>2024-10-05T02:26:51.000Z</published>
     <updated>2024-10-05T02:29:23.184Z</updated>
     
@@ -95,17 +95,17 @@
     
     
     
-    <category term="更新日志" scheme="http://example.com/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    <category term="更新日志" scheme="https://blog.imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
     
     
-    <category term="问题" scheme="http://example.com/tags/%E9%97%AE%E9%A2%98/"/>
+    <category term="问题" scheme="https://blog.imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>Java SSM框架学习 第一期</title>
-    <link href="http://example.com/posts/JavaSSM01.html"/>
-    <id>http://example.com/posts/JavaSSM01.html</id>
+    <link href="https://blog.imaeternal.cn/posts/JavaSSM01.html"/>
+    <id>https://blog.imaeternal.cn/posts/JavaSSM01.html</id>
     <published>2024-10-04T08:40:44.000Z</published>
     <updated>2024-10-04T09:38:24.030Z</updated>
     
@@ -121,19 +121,19 @@
     
     
     
-    <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://blog.imaeternal.cn/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Java" scheme="http://example.com/tags/Java/"/>
+    <category term="Java" scheme="https://blog.imaeternal.cn/tags/Java/"/>
     
-    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://blog.imaeternal.cn/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title>搭建个人博客的坑点</title>
-    <link href="http://example.com/posts/problemsolve1.html"/>
-    <id>http://example.com/posts/problemsolve1.html</id>
+    <link href="https://blog.imaeternal.cn/posts/problemsolve1.html"/>
+    <id>https://blog.imaeternal.cn/posts/problemsolve1.html</id>
     <published>2024-10-04T02:43:51.000Z</published>
     <updated>2024-10-04T05:28:03.666Z</updated>
     
@@ -144,17 +144,17 @@
     
     
     
-    <category term="更新日志" scheme="http://example.com/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    <category term="更新日志" scheme="https://blog.imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
     
     
-    <category term="问题" scheme="http://example.com/tags/%E9%97%AE%E9%A2%98/"/>
+    <category term="问题" scheme="https://blog.imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>本页面访问非常慢</title>
-    <link href="http://example.com/posts/deploymentInit.html"/>
-    <id>http://example.com/posts/deploymentInit.html</id>
+    <link href="https://blog.imaeternal.cn/posts/deploymentInit.html"/>
+    <id>https://blog.imaeternal.cn/posts/deploymentInit.html</id>
     <published>2024-10-03T06:27:29.000Z</published>
     <updated>2024-10-04T03:34:56.728Z</updated>
     
@@ -169,17 +169,17 @@
     
     
     
-    <category term="更新日志" scheme="http://example.com/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    <category term="更新日志" scheme="https://blog.imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
     
     
-    <category term="问题" scheme="http://example.com/tags/%E9%97%AE%E9%A2%98/"/>
+    <category term="问题" scheme="https://blog.imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>测试文章1</title>
-    <link href="http://example.com/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01.html"/>
-    <id>http://example.com/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01.html</id>
+    <link href="https://blog.imaeternal.cn/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01.html"/>
+    <id>https://blog.imaeternal.cn/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01.html</id>
     <published>2024-10-03T05:54:32.000Z</published>
     <updated>2024-10-04T02:37:35.094Z</updated>
     
@@ -194,10 +194,10 @@
     
     
     
-    <category term="测试" scheme="http://example.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="https://blog.imaeternal.cn/categories/%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="test" scheme="http://example.com/tags/test/"/>
+    <category term="test" scheme="https://blog.imaeternal.cn/tags/test/"/>
     
   </entry>
   
