@@ -1,1 +1,36 @@
-utils.jq(function(){$(function(){for(var a=document.getElementsByClassName("ds-fcircle"),t=0;t<a.length;t++)(()=>{var r=a[t],e=r.getAttribute("api");if(null==e)return;var n=def.avatar;utils.request(r,e,function(e){var e=e.article_data||[],t=r.getAttribute("limit");e.forEach(function(e,a){t&&t<=a||(a='<div class="timenode" index="'+a+'">',a=(a=(a=(a=(a+='<div class="header">')+'<div class="user-info"><img src="'+(e.avatar||n)+'" onerror="javascript:this.src=\''+n+"';\">")+"<span>"+e.author+"</span></div>")+"<span>"+e.created+"</span></div>")+'<a class="body" href="'+e.link+'" target="_blank" rel="external nofollow noopener noreferrer">'+e.title+"</a></div>",$(r).append(a))})})})()})});
+utils.jq(() => {
+  $(function () {
+    const els = document.getElementsByClassName('ds-fcircle');
+    for (var i = 0; i < els.length; i++) {
+      const el = els[i];
+      const api = el.getAttribute('api');
+      if (api == null) {
+        continue;
+      }
+      const default_avatar = def.avatar;
+      // layout
+      utils.request(el, api, function(data) {
+        const arr = data.article_data || [];
+        const limit = el.getAttribute('limit');
+        arr.forEach((item, i) => {
+          if (limit && i >= limit) {
+            return;
+          }
+          var cell = '<div class="timenode" index="' + i + '">';
+          cell += '<div class="header">';
+          cell += '<div class="user-info">';
+          cell += '<img src="' + (item.avatar || default_avatar) + '" onerror="javascript:this.src=\'' + default_avatar + '\';">';
+          cell += '<span>' + item.author + '</span>';
+          cell += '</div>';
+          cell += '<span>' + item.created + '</span>';
+          cell += '</div>';
+          cell += '<a class="body" href="' + item.link + '" target="_blank" rel="external nofollow noopener noreferrer">';
+          cell += item.title;
+          cell += '</a>';
+          cell += '</div>';
+          $(el).append(cell);
+        });
+      });
+    }
+  });
+});

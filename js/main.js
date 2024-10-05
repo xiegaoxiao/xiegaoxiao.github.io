@@ -1,1 +1,210 @@
-function _toConsumableArray(t){return _arrayWithoutHoles(t)||_iterableToArray(t)||_unsupportedIterableToArray(t)||_nonIterableSpread()}function _nonIterableSpread(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _unsupportedIterableToArray(t,e){var n;if(t)return"string"==typeof t?_arrayLikeToArray(t,e):"Map"===(n="Object"===(n={}.toString.call(t).slice(8,-1))&&t.constructor?t.constructor.name:n)||"Set"===n?Array.from(t):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?_arrayLikeToArray(t,e):void 0}function _iterableToArray(t){if("undefined"!=typeof Symbol&&null!=t[Symbol.iterator]||null!=t["@@iterator"])return Array.from(t)}function _arrayWithoutHoles(t){if(Array.isArray(t))return _arrayLikeToArray(t)}function _arrayLikeToArray(t,e){(null==e||e>t.length)&&(e=t.length);for(var n=0,o=Array(e);n<e;n++)o[n]=t[n];return o}var util={diffDate:function(t){var e,n=1<arguments.length&&void 0!==arguments[1]&&arguments[1],o=new Date,t=new Date(t),o=o.getTime()-t.getTime();return n?(t=o/36e5,n=o/6e4,14<(e=o/864e5)?null:1<=e?parseInt(e)+" "+ctx.date_suffix.day:1<=t?parseInt(t)+" "+ctx.date_suffix.hour:1<=n?parseInt(n)+" "+ctx.date_suffix.min:ctx.date_suffix.just):parseInt(o/864e5)},copy:function(t,e){t=document.getElementById(t);t&&(t.select(),document.execCommand("Copy"),e)&&0<e.length&&hud.toast(e,2500)},toggle:function(t){t=document.getElementById(t);t&&t.classList.toggle("display")},scrollTop:function(){window.scrollTo({top:0,behavior:"smooth"})},scrollComment:function(){document.getElementById("comments").scrollIntoView({behavior:"smooth"})},viewportLazyload:function(t,e){var n;2<arguments.length&&void 0!==arguments[2]&&!arguments[2]||!("IntersectionObserver"in window)?e():(n=new IntersectionObserver(function(t){0<t[0].intersectionRatio&&(e(),n.disconnect())})).observe(t)}},hud={toast:function(t,e){var e=Number(isNaN(e)?2e3:e),n=document.createElement("div");n.classList.add("toast"),n.classList.add("show"),n.innerHTML=t,document.body.appendChild(n),setTimeout(function(){document.body.removeChild(n)},e)}},l_body=document.querySelector(".l_body"),init={toc:function(){utils.jq(function(){var a=[];$("article.md-text :header").each(function(t,e){a.push(e)});var t=null;window.addEventListener("scroll",function(){!function(){var t,e,n=$(this).scrollTop(),o=null;for(t in a){var r=$(a[t]);r.offset().top>n+32||(!o||r.offset().top>=o.offset().top)&&(o=r)}o&&($("#data-toc a.toc-link").removeClass("active"),"#undefined"!=(e="#"+o.attr("id"))?0<(e=$('#data-toc a.toc-link[href="'+encodeURI(e)+'"]')).length&&e.addClass("active"):$("#data-toc a.toc-link:first").addClass("active"))}(),null!==t&&clearTimeout(t),t=setTimeout(function(){var t,e,n;e=document.querySelector("#data-toc .toc"),n=document.querySelector("#data-toc .toc a.toc-link.active"),null!=e&&null!=n&&(t=n.getBoundingClientRect().bottom-e.getBoundingClientRect().bottom+100,(n=n.getBoundingClientRect().top-e.getBoundingClientRect().top-64)<0?e.scrollBy({top:n,behavior:"smooth"}):0<t&&e.scrollBy({top:t,behavior:"smooth"}))}.bind(this),50)})})},sidebar:(t=>{function e(){return t.apply(this,arguments)}return e.toString=function(){return t.toString()},e})(function(){utils.jq(function(){$("#data-toc a.toc-link").click(function(t){sidebar.dismiss()})})}),relativeDate:function(t){t.forEach(function(t){var e=t.getAttribute("datetime"),e=util.diffDate(e,!0);e&&(t.innerText=e)})},registerTabsTag:function(){document.querySelectorAll(".tabs .nav-tabs .tab").forEach(function(n){n.addEventListener("click",function(t){var e;t.preventDefault(),n.classList.contains("active")||(_toConsumableArray(n.parentNode.children).forEach(function(t){t.classList.toggle("active",t===n)}),_toConsumableArray((e=document.getElementById(n.querySelector("a").getAttribute("href").replace("#",""))).parentNode.children).forEach(function(t){t.classList.toggle("active",t===e)}),e.dispatchEvent(new Event("tabs:click",{bubbles:!0})))})}),window.dispatchEvent(new Event("tabs:register"))}};init.toc(),init.sidebar(),init.relativeDate(document.querySelectorAll("#post-meta time")),init.registerTabsTag();
+// utils
+const util = {
+
+  // https://github.com/jerryc127/hexo-theme-butterfly
+  diffDate: (d, more = false) => {
+    const dateNow = new Date()
+    const datePost = new Date(d)
+    const dateDiff = dateNow.getTime() - datePost.getTime()
+    const minute = 1000 * 60
+    const hour = minute * 60
+    const day = hour * 24
+
+    let result
+    if (more) {
+      const dayCount = dateDiff / day
+      const hourCount = dateDiff / hour
+      const minuteCount = dateDiff / minute
+
+      if (dayCount > 14) {
+        result = null
+      } else if (dayCount >= 1) {
+        result = parseInt(dayCount) + ' ' + ctx.date_suffix.day
+      } else if (hourCount >= 1) {
+        result = parseInt(hourCount) + ' ' + ctx.date_suffix.hour
+      } else if (minuteCount >= 1) {
+        result = parseInt(minuteCount) + ' ' + ctx.date_suffix.min
+      } else {
+        result = ctx.date_suffix.just
+      }
+    } else {
+      result = parseInt(dateDiff / day)
+    }
+    return result
+  },
+
+  copy: (id, msg) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.select();
+      document.execCommand("Copy");
+      if (msg && msg.length > 0) {
+        hud.toast(msg, 2500);
+      }
+    }
+  },
+
+  toggle: (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.classList.toggle("display");
+    }
+  },
+
+  scrollTop: () => {
+    window.scrollTo({top: 0, behavior: "smooth"});
+  },
+
+  scrollComment: () => {
+    document.getElementById('comments').scrollIntoView({behavior: "smooth"});
+  },
+
+  viewportLazyload: (target, func, enabled = true) => {
+    if (!enabled || !("IntersectionObserver" in window)) {
+      func();
+      return;
+    }
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].intersectionRatio > 0) {
+        func();
+        observer.disconnect();
+      }
+    });
+    observer.observe(target);
+  }
+}
+
+const hud = {
+  toast: (msg, duration) => {
+    const d = Number(isNaN(duration) ? 2000 : duration);
+    var el = document.createElement('div');
+    el.classList.add('toast');
+    el.classList.add('show');
+    el.innerHTML = msg;
+    document.body.appendChild(el);
+
+    setTimeout(function(){ document.body.removeChild(el) }, d);
+    
+  },
+
+}
+
+// defines
+
+const l_body = document.querySelector('.l_body');
+
+
+const init = {
+  toc: () => {
+    utils.jq(() => {
+      const scrollOffset = 32;
+      var segs = [];
+      $("article.md-text :header").each(function (idx, node) {
+        segs.push(node);
+      });
+      function activeTOC() {
+        var scrollTop = $(this).scrollTop();
+        var topSeg = null;
+        for (var idx in segs) {
+          var seg = $(segs[idx]);
+          if (seg.offset().top > scrollTop + scrollOffset) {
+            continue;
+          }
+          if (!topSeg) {
+            topSeg = seg;
+          } else if (seg.offset().top >= topSeg.offset().top) {
+            topSeg = seg;
+          }
+        }
+        if (topSeg) {
+          $("#data-toc a.toc-link").removeClass("active");
+          var link = "#" + topSeg.attr("id");
+          if (link != '#undefined') {
+            const highlightItem = $('#data-toc a.toc-link[href="' + encodeURI(link) + '"]');
+            if (highlightItem.length > 0) {
+              highlightItem.addClass("active");
+            }
+          } else {
+            $('#data-toc a.toc-link:first').addClass("active");
+          }
+        }
+      }
+      function scrollTOC() {
+        const e0 = document.querySelector('#data-toc .toc');
+        const e1 = document.querySelector('#data-toc .toc a.toc-link.active');
+        if (e0 == null || e1 == null) {
+          return;
+        }
+        const offsetBottom = e1.getBoundingClientRect().bottom - e0.getBoundingClientRect().bottom + 100;
+        const offsetTop = e1.getBoundingClientRect().top - e0.getBoundingClientRect().top - 64;
+        if (offsetTop < 0) {
+          e0.scrollBy({top: offsetTop, behavior: "smooth"});
+        } else if (offsetBottom > 0) {
+          e0.scrollBy({top: offsetBottom, behavior: "smooth"});
+        }
+      }
+      
+      var timeout = null;
+      window.addEventListener('scroll', function() {
+        activeTOC();
+        if(timeout !== null) clearTimeout(timeout);
+        timeout = setTimeout(function() {
+          scrollTOC();
+        }.bind(this), 50);
+      });      
+    })
+  },
+  sidebar: () => {
+    utils.jq(() => {
+      $("#data-toc a.toc-link").click(function (e) {
+        sidebar.dismiss();
+      });
+    })
+  },
+  relativeDate: (selector) => {
+    selector.forEach(item => {
+      const $this = item
+      const timeVal = $this.getAttribute('datetime')
+      let relativeValue = util.diffDate(timeVal, true)
+      if (relativeValue) {
+        $this.innerText = relativeValue
+      }
+    })
+  },
+  /**
+   * Tabs tag listener (without twitter bootstrap).
+   */
+  registerTabsTag: function () {
+    // Binding `nav-tabs` & `tab-content` by real time permalink changing.
+    document.querySelectorAll('.tabs .nav-tabs .tab').forEach(element => {
+      element.addEventListener('click', event => {
+        event.preventDefault();
+        // Prevent selected tab to select again.
+        if (element.classList.contains('active')) return;
+        // Add & Remove active class on `nav-tabs` & `tab-content`.
+        [...element.parentNode.children].forEach(target => {
+          target.classList.toggle('active', target === element);
+        });
+        // https://stackoverflow.com/questions/20306204/using-queryselector-with-ids-that-are-numbers
+        const tActive = document.getElementById(element.querySelector('a').getAttribute('href').replace('#', ''));
+        [...tActive.parentNode.children].forEach(target => {
+          target.classList.toggle('active', target === tActive);
+        });
+        // Trigger event
+        tActive.dispatchEvent(new Event('tabs:click', {
+          bubbles: true
+        }));
+      });
+    });
+
+    window.dispatchEvent(new Event('tabs:register'));
+  },
+
+}
+
+
+// init
+init.toc()
+init.sidebar()
+init.relativeDate(document.querySelectorAll('#post-meta time'))
+init.registerTabsTag()
