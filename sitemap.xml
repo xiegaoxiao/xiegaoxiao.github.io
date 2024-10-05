@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://imaeternal.cn/posts/problemsolve2.html</loc>
+    
+    <lastmod>2024-10-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://imaeternal.cn/posts/JavaSSM01.html</loc>
     
     <lastmod>2024-10-04</lastmod>
@@ -97,14 +106,14 @@
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/tags/test/</loc>
+    <loc>https://imaeternal.cn/tags/%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/tags/%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://imaeternal.cn/tags/test/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -120,14 +129,14 @@
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/categories/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</loc>
+    <loc>https://imaeternal.cn/categories/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

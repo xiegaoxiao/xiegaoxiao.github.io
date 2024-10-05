@@ -6,7 +6,7 @@
   <link href="https://imaeternal.cn/atom.xml" rel="self"/>
   
   <link href="https://imaeternal.cn/"/>
-  <updated>2024-10-04T09:38:24.030Z</updated>
+  <updated>2024-10-05T02:27:34.007Z</updated>
   <id>https://imaeternal.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建个人博客的坑点</title>
+    <link href="https://imaeternal.cn/posts/problemsolve2.html"/>
+    <id>https://imaeternal.cn/posts/problemsolve2.html</id>
+    <published>2024-10-05T02:26:51.000Z</published>
+    <updated>2024-10-05T02:27:34.007Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="目前本站转移服务器了"><a href="#目前本站转移服务器了" class="headerlink" title="目前本站转移服务器了"></a>目前本站转移服务器了</h2><span id="more"></span><p>不用vercel改用自己的服务器</p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;目前本站转移服务器了&quot;&gt;&lt;a href=&quot;#目前本站转移服务器了&quot; class=&quot;headerlink&quot; title=&quot;目前本站转移服务器了&quot;&gt;&lt;/a&gt;目前本站转移服务器了&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="更新日志" scheme="https://imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="问题" scheme="https://imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>Java SSM框架学习 第一期</title>
