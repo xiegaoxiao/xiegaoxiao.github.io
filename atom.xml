@@ -6,7 +6,7 @@
   <link href="https://blog.imaeternal.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.imaeternal.cn/"/>
-  <updated>2024-10-05T08:43:43.087Z</updated>
+  <updated>2024-10-05T08:46:37.299Z</updated>
   <id>https://blog.imaeternal.cn/</id>
   
   <author>
@@ -21,14 +21,15 @@
     <link href="https://blog.imaeternal.cn/posts/publish01.html"/>
     <id>https://blog.imaeternal.cn/posts/publish01.html</id>
     <published>2024-10-05T08:26:51.000Z</published>
-    <updated>2024-10-05T08:43:43.087Z</updated>
+    <updated>2024-10-05T08:46:37.299Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p><img src="/assets/pic/dz.jpeg,%22%E4%B8%81%E7%9C%9F%22"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h1&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/assets/pic/dz.jpeg,%22%E4%B8%81%E7%9C%9F%22&quot;&gt;&lt;/p&gt;
+</summary>
       
     
     
