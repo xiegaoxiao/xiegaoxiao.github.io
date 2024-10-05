@@ -6,7 +6,7 @@
   <link href="https://blog.imaeternal.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.imaeternal.cn/"/>
-  <updated>2024-10-05T05:09:46.976Z</updated>
+  <updated>2024-10-05T07:26:19.253Z</updated>
   <id>https://blog.imaeternal.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>本站又重新部署了</title>
+    <link href="https://blog.imaeternal.cn/posts/deploymentproblem1.html"/>
+    <id>https://blog.imaeternal.cn/posts/deploymentproblem1.html</id>
+    <published>2024-10-05T07:26:29.000Z</published>
+    <updated>2024-10-05T07:26:19.253Z</updated>
+    
+    <content type="html"><![CDATA[<p>目前就这样吧,不想再换了</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;目前就这样吧,不想再换了&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="更新日志" scheme="https://blog.imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="问题" scheme="https://blog.imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>目前域名还没有绑定好</title>
