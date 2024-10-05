@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://imaeternal.cn/posts/JavaSSM01.html</loc>
+    <loc>http://example.com/posts/JavaSSM01.html</loc>
     
     <lastmod>2024-10-04</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/posts/problemsolve1.html</loc>
+    <loc>http://example.com/posts/problemsolve1.html</loc>
     
     <lastmod>2024-10-04</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/posts/deploymentInit.html</loc>
+    <loc>http://example.com/posts/deploymentInit.html</loc>
     
     <lastmod>2024-10-04</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01.html</loc>
+    <loc>http://example.com/posts/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A01.html</loc>
     
     <lastmod>2024-10-04</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/wiki/niuke/%E7%89%9B%E5%AE%A2%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E5%89%8D%E7%AB%AF.html</loc>
+    <loc>http://example.com/wiki/niuke/%E7%89%9B%E5%AE%A2%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E5%89%8D%E7%AB%AF.html</loc>
     
     <lastmod>2024-10-03</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/explore/sites/%E5%B7%A5%E5%85%B7%E5%BA%93.html</loc>
+    <loc>http://example.com/explore/sites/%E5%B7%A5%E5%85%B7%E5%BA%93.html</loc>
     
     <lastmod>2024-10-03</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/explore/notes/%E6%8E%A2%E7%B4%A2%E8%80%85%E7%AC%94%E8%AE%B0.html</loc>
+    <loc>http://example.com/explore/notes/%E6%8E%A2%E7%B4%A2%E8%80%85%E7%AC%94%E8%AE%B0.html</loc>
     
     <lastmod>2024-10-03</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/about/index.html</loc>
+    <loc>http://example.com/about/index.html</loc>
     
     <lastmod>2024-10-03</lastmod>
     
@@ -75,7 +75,7 @@
   
 
   <url>
-    <loc>https://imaeternal.cn/</loc>
+    <loc>http://example.com/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -83,28 +83,28 @@
 
   
   <url>
-    <loc>https://imaeternal.cn/tags/%E9%97%AE%E9%A2%98/</loc>
+    <loc>http://example.com/tags/Java/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/tags/test/</loc>
+    <loc>http://example.com/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/tags/Java/</loc>
+    <loc>http://example.com/tags/%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>http://example.com/tags/test/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -113,21 +113,21 @@
 
   
   <url>
-    <loc>https://imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</loc>
+    <loc>http://example.com/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/categories/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>http://example.com/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://imaeternal.cn/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>http://example.com/categories/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2024-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
