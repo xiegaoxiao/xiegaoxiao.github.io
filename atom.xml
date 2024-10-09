@@ -6,7 +6,7 @@
   <link href="https://blog.imaeternal.cn/atom.xml" rel="self"/>
   
   <link href="https://blog.imaeternal.cn/"/>
-  <updated>2024-10-08T07:41:57.062Z</updated>
+  <updated>2024-10-09T13:13:05.585Z</updated>
   <id>https://blog.imaeternal.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>本站已经优化</title>
+    <link href="https://blog.imaeternal.cn/posts/deploymentproblem2.html"/>
+    <id>https://blog.imaeternal.cn/posts/deploymentproblem2.html</id>
+    <published>2024-10-09T13:12:29.000Z</published>
+    <updated>2024-10-09T13:13:05.585Z</updated>
+    
+    <content type="html"><![CDATA[<p>已完成css + js 国内换源 </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;已完成css + js 国内换源 &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="更新日志" scheme="https://blog.imaeternal.cn/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="问题" scheme="https://blog.imaeternal.cn/tags/%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>Java SSM框架学习 第三期(数据注入)</title>
