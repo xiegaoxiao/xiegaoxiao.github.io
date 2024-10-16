@@ -122,6 +122,13 @@
   </url>
   
   <url>
+    <loc>https://blog.imaeternal.cn/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2024-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.imaeternal.cn/tags/Spring/</loc>
     <lastmod>2024-10-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -130,13 +137,6 @@
   
   <url>
     <loc>https://blog.imaeternal.cn/tags/Mybatis/</loc>
-    <lastmod>2024-10-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.imaeternal.cn/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2024-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
