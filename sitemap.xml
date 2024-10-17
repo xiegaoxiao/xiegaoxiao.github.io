@@ -94,7 +94,7 @@
 
   <url>
     <loc>https://blog.imaeternal.cn/</loc>
-    <lastmod>2024-10-16</lastmod>
+    <lastmod>2024-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -102,42 +102,42 @@
   
   <url>
     <loc>https://blog.imaeternal.cn/tags/Java/</loc>
-    <lastmod>2024-10-16</lastmod>
+    <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.imaeternal.cn/tags/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2024-10-16</lastmod>
+    <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.imaeternal.cn/tags/SSM%E6%A1%86%E6%9E%B6/</loc>
-    <lastmod>2024-10-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.imaeternal.cn/tags/Spring/</loc>
-    <lastmod>2024-10-16</lastmod>
+    <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.imaeternal.cn/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2024-10-16</lastmod>
+    <lastmod>2024-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.imaeternal.cn/tags/Spring/</loc>
+    <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.imaeternal.cn/tags/Mybatis/</loc>
-    <lastmod>2024-10-16</lastmod>
+    <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -146,14 +146,14 @@
   
   <url>
     <loc>https://blog.imaeternal.cn/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2024-10-16</lastmod>
+    <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.imaeternal.cn/categories/%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/</loc>
-    <lastmod>2024-10-16</lastmod>
+    <lastmod>2024-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
