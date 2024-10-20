@@ -1,4 +1,4 @@
-https://blog.imaeternal.cn/2024/10/19/2024/10/subject_OperatingSystem1_02/
+https://blog.imaeternal.cn/2024/10/20/2024/10/Myabatis03/
 https://blog.imaeternal.cn/2024/10/19/2024/10/subject_OperatingSystem1_01/
 https://blog.imaeternal.cn/2024/10/18/2024/10/JavaSSM07/
 https://blog.imaeternal.cn/2024/10/06/2024/10/JavaSSM01/
@@ -18,8 +18,8 @@ https://blog.imaeternal.cn/
 https://blog.imaeternal.cn/tags/Java/
 https://blog.imaeternal.cn/tags/%E6%8A%80%E6%9C%AF/
 https://blog.imaeternal.cn/tags/SSM%E6%A1%86%E6%9E%B6/
-https://blog.imaeternal.cn/tags/Spring/
 https://blog.imaeternal.cn/tags/%E5%B7%A5%E5%85%B7/
+https://blog.imaeternal.cn/tags/Spring/
 https://blog.imaeternal.cn/tags/Mybatis/
 https://blog.imaeternal.cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/
 https://blog.imaeternal.cn/tags/408/
