@@ -7,7 +7,7 @@
  * ----------------------------------------------------------------------------
  * 包含的模块（括号内为拆分前在 fomal.js 里的行号）：
  *   · 导航栏显示标题（37-66）—— 滚动到正文后，顶栏中间淡入文章标题（原来只有站点名）
- *   · 欢迎信息（70-165）—— 首屏打字机欢迎语，按当前时间/节日换不同问候语；window.onload 触发
+ *   · 欢迎信息 —— 根据访客本地时间显示侧栏问候语；首次加载及 PJAX 换页时更新
  *   · 随便逛逛（504-525）—— 右下角"随便逛逛"按钮，随机跳一篇文章
  *   · 分享按钮（1237-1267）—— 文章页分享：复制链接 / 调起系统分享面板
  * ----------------------------------------------------------------------------
@@ -17,9 +17,7 @@
  * 【本文件目录】共 8 个顶层声明（行号可能随后续编辑漂移，找不到就 Ctrl+F 搜函数名）
  *     37  tonav()
  *     55  scrollToTop()
- *     81  getDistance(e1, n1, e2, n2)
- *     98  showWelcomeLoading()
- *    107  showWelcome()
+ *         showWelcome()
  *    168  randomPost()
  *    191  share_()
  *    215  share()
@@ -67,70 +65,11 @@ function scrollToTop() {
 /* 导航栏显示标题 end */
 
 /* ------------------------------ 欢迎信息 ------------------------------ */
-/* 原 fomal.js 70-165 行，原样搬运，未改逻辑 */
 /* 欢迎信息 start */
-// 用腾讯位置服务按访客 IP 粗略定位（侧栏「欢迎信息」卡片）
-// ⚠️ 需要你自己的 Key：到 https://lbs.qq.com/ 申请「WebService API」Key，替换下面的 YOUR_TENCENT_MAP_KEY。
-//    Key 是明文下发到浏览器的，务必在控制台把它限制到你的域名，避免配额被盗用。
-//    不想要这个功能：删掉本段 $.ajax 即可，卡片会停在「欢迎信息正在加载中...」。
-//get请求
-$.ajax({
-  type: 'get',
-  url: 'https://apis.map.qq.com/ws/location/v1/ip',
-  data: {
-    key: 'YOUR_TENCENT_MAP_KEY',
-    output: 'jsonp',
-  },
-  dataType: 'jsonp',
-  success: function (res) {
-    ipLoacation = res;
-    //数据回来后立刻渲染：接口慢于 window.onload 时，原先这段欢迎信息会一直空着
-    showWelcome();
-  }
-})
-function getDistance(e1, n1, e2, n2) {
-  const R = 6371
-  const { sin, cos, asin, PI, hypot } = Math
-  let getPoint = (e, n) => {
-    e *= PI / 180
-    n *= PI / 180
-    return { x: cos(n) * cos(e), y: cos(n) * sin(e), z: sin(n) }
-  }
-
-  let a = getPoint(e1, n1)
-  let b = getPoint(e2, n2)
-  let c = hypot(a.x - b.x, a.y - b.y, a.z - b.z)
-  let r = asin(c / 2) * 2 * R
-  return Math.round(r);
-}
-
-//还没拿到位置数据时先占个位：避免侧栏留一个空的蓝色盒子，也避免控制台报错
-function showWelcomeLoading() {
-  try {
-    let el = document.getElementById("welcome-info");
-    if (el && !el.innerHTML.trim()) el.innerHTML = '<b><center>欢迎信息正在加载中...</center></b>';
-  } catch (err) {
-    // console.log("Pjax无法获取#welcome-info元素🙄🙄🙄")
-  }
-}
-
+// 本地时间即可生成问候语，无需定位接口或 API Key。
 function showWelcome() {
-
-  //数据还没回来（接口慢或被拦截）就先显示加载提示
-  if (!ipLoacation || !ipLoacation.result || !ipLoacation.result.location) {
-    showWelcomeLoading();
-    return;
-  }
-
-  //站长所在地坐标（示例值：北京天安门 116.397428, 39.90923）。换成你自己的经纬度，或删掉 dist 与下面这句问候里的距离部分
-  let dist = getDistance(116.397428, 39.90923, ipLoacation.result.location.lng, ipLoacation.result.location.lat);
-  let ad = ipLoacation.result.ad_info;
-  let pos = ad.nation === "中国" ? [ad.province, ad.city, ad.district].filter(Boolean).join(" ") : ad.nation;
-  let ip = ipLoacation.result.ip;
-  //IPv6 动辄 30+ 字符且无空格，在每个冒号后插软换行点（<wbr>），让它能在冒号处断行而不撑破卡片
-  let ipHtml = String(ip).replace(/:/g, ":<wbr>");
-
-  //根据本地时间切换问候语
+  const el = document.getElementById("welcome-info");
+  if (!el) return;
   let timeChange;
   let date = new Date();
   let hour = date.getHours();
@@ -141,31 +80,12 @@ function showWelcome() {
   else timeChange = "<span>夜深了</span>";
   let clock = String(hour).padStart(2, "0") + ":" + String(date.getMinutes()).padStart(2, "0");
 
-  try {
-    //自定义文本和需要放的位置
-    document.getElementById("welcome-info").innerHTML =
-      `<b><center>🎉 欢迎信息 🎉</center>来自 <span style="color:var(--blue-custom)">${pos}</span> 的访客，${timeChange}，现在是 <span style="color:var(--blue-custom)">${clock}</span>，你目前距站长约 <span style="color:var(--blue-custom)">${dist}</span> 公里，IP地址：<span style="color:var(--blue-custom)">${ipHtml}</span></b>`;
-  } catch (err) {
-    // console.log("Pjax无法获取#welcome-info元素🙄🙄🙄")
-  }
+  el.innerHTML = `<b><center>🎉 欢迎信息 🎉</center>${timeChange}，欢迎来到 ethan_xie 的博客！现在是 <span>${clock}</span>。这里记录我的开源项目与技术学习，欢迎随便逛逛。</b>`;
 }
-window.onload = showWelcome;
-// 如果使用了pjax在加上下面这行代码
+window.addEventListener('load', showWelcome);
+document.addEventListener('DOMContentLoaded', showWelcome);
 document.addEventListener('pjax:complete', showWelcome);
-//Pjax 换页后新插入的 #welcome-info 是空的，先放加载提示（有数据时会被 showWelcome 覆盖）
-document.addEventListener('pjax:complete', showWelcomeLoading);
-
-//fomal.js 是 defer 加载的，执行时 DOM 已解析，先立刻占位
-showWelcomeLoading();
-//接口 10 秒还没回来就给出失败提示，免得「欢迎信息正在加载中...」一直挂着
-setTimeout(function () {
-  try {
-    let el = document.getElementById("welcome-info");
-    if (el && el.innerHTML.indexOf("正在加载中") > -1) {
-      el.innerHTML = '<b><center>欢迎信息加载失败，请刷新重试🥺</center></b>';
-    }
-  } catch (err) { }
-}, 10000);
+showWelcome();
 
 /* 欢迎信息 end */
 

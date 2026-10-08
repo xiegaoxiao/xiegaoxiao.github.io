@@ -1198,7 +1198,7 @@ inject:
     - <script defer src="/js/modules/shell.js?v=20261005-animation1"></script> # 快捷键拦截/夜间动画/恶搞标题/搜索框修复/手机滚动条
     - <script defer src="/js/modules/effects.js?v=20261004q"></script> # 雪花/星空/表情放大
     - <script defer src="/js/modules/reading.js?v=20261005-animation1"></script> # 阅读进度条/FPS
-    - <script defer src="/js/modules/nav.js?v=20261005-scroll1"></script> # 导航栏标题/首屏欢迎语/随便逛逛/分享
+    - <script defer src="/js/modules/nav.js?v=20261008-welcome1"></script> # 导航栏标题/首屏欢迎语/随便逛逛/分享
     - <script defer src="/js/modules/cursor.js?v=20261005-hover1"></script> # 小猫咪/右键菜单/听话鼠标
     - <script defer src="/js/modules/footer-time.js"></script> # 页脚计时器
     - <script defer src="/js/modules/settings.js?v=20261005-animation1"></script> # 美化模块（右下角齿轮设置面板，最大的一块）
