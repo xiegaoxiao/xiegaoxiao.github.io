@@ -190,6 +190,9 @@ magnet:
   type: categories
   devide: 3
   display:
+    - name: 开源项目
+      display_name: 开源项目
+      icon: 🚀
     - name: 技术
       display_name: 技术笔记
       icon: 💻
