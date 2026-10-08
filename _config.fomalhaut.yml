@@ -57,7 +57,7 @@ mathjax:
 # Favicon（網站圖標）
 favicon: /assets/favicon.ico
 avatar:
-  img: https://github.com/xiegaoxiao.png
+  img: "https://q1.qlogo.cn/g?b=qq&nk=2914213073&s=640"
   effect: false
 disable_top_img: false
 

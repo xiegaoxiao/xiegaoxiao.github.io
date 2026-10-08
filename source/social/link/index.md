@@ -11,7 +11,7 @@ comments: false
 
 - 名称：ethan_xie
 - 地址：https://xiegaoxiao.github.io/
-- 头像：https://github.com/xiegaoxiao.png
+- 头像：https://q1.qlogo.cn/g?b=qq&nk=2914213073&s=640
 - 简介：记录学习、代码与生活。
 
 可以通过 [GitHub](https://github.com/xiegaoxiao) 找到我。
