@@ -62,7 +62,7 @@
     "workbox-build": "^6.5.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.5",
+    "@babel/core": "^8.0.6",
     "@babel/preset-env": "^7.20.2",
     "cheerio": "^0.22.0",
     "gulp-babel": "^8.0.0",
