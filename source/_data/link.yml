@@ -1,0 +1,15 @@
+- class_name: 开源与学习
+  class_desc: 构建这个博客所用的开源项目
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-cn/
+      avatar: /img/hexo-logo.svg
+      descr: 快速、简洁且高效的博客框架
+    - name: Fomalhaut
+      link: https://github.com/fomalhaut1998/hexo-theme-fomalhaut
+      avatar: /assets/head.jpg
+      descr: 本站使用的博客主题
+    - name: Butterfly
+      link: https://butterfly.js.org/
+      avatar: /img/hexo-logo.svg
+      descr: Fomalhaut 的上游主题

@@ -1,0 +1,55 @@
+#footer-wrap
+  #ft
+    .ft-item-1
+      .t-top
+        .t-t-l
+          p.ft-t.t-l-t 保持好奇 ✨
+          .bg-ad
+            div 记录学习、代码与生活。每一次认真记录，都是留给未来自己的礼物。
+            .btn-xz-box
+              a.btn-xz(href='/box/astronomy/') 开启星辰之旅
+        .t-t-r
+          p.ft-t.t-l-t 继续阅读 💡
+          ul.ft-links
+            li
+              a(href='/archives/') 文章归档
+              a(href='/categories/') 文章分类
+            li
+              a(href='/tags/') 文章标签
+              a(href='/box/nav/') 网址导航
+            li
+              a(href='/box/gallery/') 我的画廊
+              a(href='/personal/about/') 关于作者
+            li
+              a(href='/atom.xml') RSS 订阅
+              a(href='https://github.com/xiegaoxiao' target='_blank' rel='noopener') GitHub
+    .ft-item-2
+      p.ft-t 遇见开源 🌱
+      .ft-img-group
+        .img-group-item
+          a(href='/' title=config.title)
+            img(src=theme.avatar.img alt=config.author)
+        .img-group-item
+          a(href='https://hexo.io/zh-cn/' title='Hexo' target='_blank' rel='noopener')
+            img(src='/img/hexo-logo.svg' alt='Hexo')
+        .img-group-item
+          a(href='https://github.com/fomalhaut1998/hexo-theme-fomalhaut' title='Fomalhaut' target='_blank' rel='noopener')
+            img(src='/assets/head.jpg' alt='Fomalhaut')
+  if theme.footer.owner.enable
+    - var nowYear = new Date().getFullYear()
+    .copyright
+      span= `© ${theme.footer.owner.since}-${nowYear} By ${config.author}`
+  .framework-info
+    a(href='https://hexo.io/' target='_blank' rel='noopener') Hexo
+    span.footer-separator |
+    a(href='https://github.com/fomalhaut1998/hexo-theme-fomalhaut' target='_blank' rel='noopener') Fomalhaut v1.0.2
+    span.footer-separator |
+    a(href='https://pages.github.com/' target='_blank' rel='noopener') GitHub Pages
+  if theme.footer.custom_text
+    .footer_custom_text!= theme.footer.custom_text
+  #workboard
+  p#ghbdages
+    a.github-badge(href='https://github.com/xiegaoxiao/xiegaoxiao.github.io' target='_blank' rel='noopener' title='博客源码')
+      img(src='https://img.shields.io/badge/Source-GitHub-d021d6.svg' alt='GitHub')
+    a.github-badge(href='https://pages.github.com/' target='_blank' rel='noopener' title='托管于 GitHub Pages')
+      img(src='https://img.shields.io/badge/Hosted-GitHub_Pages-222.svg' alt='GitHub Pages')
