@@ -31,3 +31,8 @@ cdn-check/
 .theme-template/
 .legacy-site/
 .qa/
+
+# Tencent Cloud EdgeOne
+.env
+.edgeone/
+.tef_dist/
