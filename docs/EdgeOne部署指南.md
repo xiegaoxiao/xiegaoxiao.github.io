@@ -4,7 +4,7 @@
 
 ## 导入项目
 
-1. 登录 https://edgeone.ai/pages/ ，开通免费版服务，选择导入 Git 仓库。
+1. 登录 https://edgeone.ai/login?s_url=https%3A%2F%2Fconsole.tencentcloud.com%2Fedgeone%2Fmakers ，开通免费版服务，选择导入 Git 仓库。
 2. 连接 GitHub，授权此仓库：`xiegaoxiao/xiegaoxiao.github.io`。
 3. 选择源码分支 `hexo-source`，项目根目录保持仓库根目录。
 4. 项目名可填 `ethan-xie-blog`。框架选择 Hexo；没有 Hexo 选项则选 Other。
@@ -37,7 +37,8 @@
 5. 在 EdgeOne 项目环境变量中设置 `SITE_URL=https://你的名字.is-a.dev`，然后重新部署。
    该变量会更新 canonical、站点地图、RSS 和 robots.txt 中的站点地址。
 
-不要使用项目默认域名作为国内长期公开入口。按平台域名规则，默认域名有访问限制；
+不要使用项目默认域名作为国内长期公开入口。按平台当前规则，国内访问默认域名需使用
+系统生成的预览链接，有效期 3 小时，可在项目概览的“预览”按钮更新；
 没有备案时，绑定自定义域名并使用境外加速区域。境外节点的国内可达性仍需实际测试。
 
 ## 验证
@@ -55,4 +56,4 @@ Git 自动部署；GitHub Pages 没有 `SITE_URL` 时仍使用原地址。
 
 - https://pages.edgeone.ai/zh/document/edgeone-json
 - https://pages.edgeone.ai/zh/document/faqs
-- https://edgeone.ai/document/175201428435140608
+- https://pages.edgeone.ai/zh/document/domain-overview
