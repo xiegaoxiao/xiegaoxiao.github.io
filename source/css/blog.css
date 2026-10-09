@@ -12,3 +12,8 @@
 #local-search .search-result {
   color: inherit;
 }
+
+/* Wrap article tags within the reading column on narrow screens. */
+#post .tag_share .post-meta__tag-list {
+  flex-wrap: wrap;
+}

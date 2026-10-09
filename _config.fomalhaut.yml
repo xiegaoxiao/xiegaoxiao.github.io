@@ -1172,7 +1172,7 @@ inject:
     - <link rel="stylesheet" href="/css/paperclip.css?v=20261005-mobile1">
 
   bottom:
-    - <link rel="stylesheet" href="/css/blog.css?v=20261008">
+    - <link rel="stylesheet" href="/css/blog.css?v=20261009-tags1">
     - <script src="https://registry.npmmirror.com/jquery/3.6.0/files/dist/jquery.min.js"></script> # jQuery
     - <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script> # jQuery 本地兜底（CDN 失效时不至于让 fomal.js 整个中断）
     # - <script async src="https://registry.npmmirror.com/vue/2.6.14/files/dist/vue.min.js"></script> # VUE（92KB，15 处 $notify 已由 /js/notify.js 承担，故移除）
