@@ -17,6 +17,7 @@ git push origin hexo-source
 - [博客使用指南](docs/博客使用指南.md)
 - [主题配置说明](docs/Fomalhaut主题说明.md)
 - [旧文章迁移清单](docs/legacy-migration.json)
+- [EdgeOne Makers 部署指南](docs/EdgeOne部署指南.md)
 
 源码分支为 `hexo-source`。原 `main`、`master` 分支保留；15 篇旧文章的 URL 保持不变。
 
